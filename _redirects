@@ -1,0 +1,9 @@
+# Handle Root Index
+/index.html  /  301
+
+# Handle Language Indexes
+/en/index.html  /en/  301
+/ru/index.html  /ru/  301
+
+# Netlify's "Pretty URLs" feature (enabled in netlify.toml) 
+# will handle mapping extensionless requests to .html files.
