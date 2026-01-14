@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Google Automations - AI-powered Google Ads, Analytics, Workspace automations. Optimize your business processes with artificial intelligence.">
+    <title>Google Automations | AI-Agent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+</head>
+
+<body>
+    <!-- Stars Background -->
+    <div class="stars-container" id="stars"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Ai-<span class="logo-accent">Agent</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="about-us.html" class="nav-link">About Us</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="lang-dropdown"><button class="lang-dropdown-btn" id="langDropdownBtn"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg><span>EN</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="dropdown-arrow">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg></button>
+                <div class="lang-dropdown-menu" id="langDropdownMenu"><a href="../google-otomasyonlari.html"
+                        class="lang-dropdown-item"><span class="lang-flag">🇹🇷</span><span>Türkçe</span></a><a
+                        href="google-automations.html" class="lang-dropdown-item active"><span
+                            class="lang-flag">🇬🇧</span><span>English</span></a><a href="../ru/google-automations.html"
+                        class="lang-dropdown-item"><span class="lang-flag">🇷🇺</span><span>Русский</span></a></div>
+            </div>
+            <a href="index.html#contact" class="btn btn-primary nav-cta">Free Consultation</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="hero-glow"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <a href="index.html#services" class="back-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m15 18-6-6 6-6" />
+                    </svg>
+                    All Services
+                </a>
+                <div class="service-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span>Google Automations</span>
+                </div>
+                <h1 class="service-title">
+                    <span class="title-line">Automate the</span>
+                    <span class="title-line gradient-text">Google Ecosystem with AI</span>
+                </h1>
+                <p class="service-description">
+                    Automate all your Google tools from Google Ads to Analytics, Workspace to Search Console with
+                    artificial intelligence. Reduce time spent on manual tasks, increase efficiency, and optimize your
+                    budget.
+                </p>
+                <div class="service-hero-buttons">
+                    <a href="https://wa.me/905326947419" target="_blank" class="btn btn-primary btn-lg">
+                        <span>Get a Quote Now</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Automation Section -->
+    <section class="ai-revolution">
+        <div class="container">
+            <div class="revolution-grid">
+                <div class="revolution-content">
+                    <span class="section-badge">Why Automation?</span>
+                    <h2 class="section-title">Manual Processes <span class="gradient-text">Are Left Behind</span></h2>
+                    <p class="revolution-text">
+                        Managing Google tools manually means both wasted time and risk of error.
+                        Optimize your campaigns 24/7 with <strong>AI-powered automations</strong>,
+                        get automatic reports, and distribute budget intelligently.
+                    </p>
+                    <div class="stats-row">
+                        <div class="stat-box">
+                            <span class="stat-value">80%</span>
+                            <span class="stat-desc">Time Savings</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value">45%</span>
+                            <span class="stat-desc">Cost Reduction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="revolution-visual">
+                    <div class="comparison-card">
+                        <div class="comparison-item old">
+                            <div class="comparison-header">
+                                <span class="comparison-icon">👨‍💻</span>
+                                <span class="comparison-label">Manual Management</span>
+                            </div>
+                            <ul>
+                                <li>Daily manual control</li>
+                                <li>Repetitive tasks</li>
+                                <li>Risk of human error</li>
+                                <li>Limited working hours</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-divider">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
+                        </div>
+                        <div class="comparison-item new">
+                            <div class="comparison-header">
+                                <span class="comparison-icon">🤖</span>
+                                <span class="comparison-label">AI Automation</span>
+                            </div>
+                            <ul>
+                                <li>24/7 automatic optimization</li>
+                                <li>Smart budget distribution</li>
+                                <li>Consistent performance</li>
+                                <li>Real-time response</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Tools Section -->
+    <section class="ai-agents">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Google Tools</span>
+                <h2 class="section-title">Which <span class="gradient-text">Platforms</span> Do We Automate?
+                </h2>
+                <p class="section-description">
+                    We integrate all essential tools in the Google ecosystem with AI.
+                </p>
+            </div>
+
+            <div class="agents-grid">
+                <div class="agent-card">
+                    <div class="agent-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path
+                                d="M12.82 10.03L7.76 7.5 12.82 5l5.06 2.5-5.06 2.53zm6.18 2.47l-6 3v6l6-3v-6zM11 21.5v-6l-6-3v6l6 3z" />
+                        </svg>
+                    </div>
+                    <h3>Google Ads</h3>
+                    <p>Campaign optimization and budget management</p>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path
+                                d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.1h-15V5h15v14.1zm0-16.1h-15c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
+                        </svg>
+                    </div>
+                    <h3>Analytics</h3>
+                    <p>Data analysis and automated reporting</p>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path
+                                d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-2 8h-3v3h-2v-3h-3v-2h3V9h2v3h3v2z" />
+                        </svg>
+                    </div>
+                    <h3>Drive/Workspace</h3>
+                    <p>File management and workflow automation</p>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.3-4.3" />
+                        </svg>
+                    </div>
+                    <h3>Search Console</h3>
+                    <p>SEO monitoring and error fixing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services List Section -->
+    <section class="services-list" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Comprehensive Services</span>
+                <h2 class="section-title">Our Google <span class="gradient-text">Automation Package</span></h2>
+                <p class="section-description">
+                    Optimize all your tools in the Google ecosystem with AI.
+                </p>
+            </div>
+
+            <div class="services-categories">
+                <!-- Google Ads Automation -->
+                <div class="service-category featured">
+                    <div class="category-header">
+                        <div class="category-icon">📱</div>
+                        <h3>Google Ads Automations</h3>
+                        <span class="category-badge">Popular</span>
+                    </div>
+                    <ul class="service-items">
+                        <li>
+                            <span class="item-number">01</span>
+                            <div class="item-content">
+                                <h4>Automated Bidding Strategies</h4>
+                                <p>ROAS optimization with AI-powered smart bidding systems</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">02</span>
+                            <div class="item-content">
+                                <h4>Dynamic Ad Texts</h4>
+                                <p>Automated text generation for Performance Max and RSA campaigns</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">03</span>
+                            <div class="item-content">
+                                <h4>Budget Optimization</h4>
+                                <p>Real-time budget distribution and performance-based adjustment</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">04</span>
+                            <div class="item-content">
+                                <h4>Negative Keyword Management</h4>
+                                <p>Automated negative keyword detection and addition</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">05</span>
+                            <div class="item-content">
+                                <h4>Quality Score Improvement</h4>
+                                <p>Automated optimizations to increase quality score</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">06</span>
+                            <div class="item-content">
+                                <h4>Campaign Pausing Rules</h4>
+                                <p>Automated campaign control based on performance thresholds</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">07</span>
+                            <div class="item-content">
+                                <h4>A/B Test Automation</h4>
+                                <p>Automated testing of ad variations and selecting the winner</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Google Analytics Automation -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">📊</div>
+                        <h3>Analytics Automations</h3>
+                    </div>
+                    <ul class="service-items">
+                        <li>
+                            <span class="item-number">08</span>
+                            <div class="item-content">
+                                <h4>Automated Report Generation</h4>
+                                <p>Daily, weekly, monthly customized reports</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">09</span>
+                            <div class="item-content">
+                                <h4>Anomaly Detection</h4>
+                                <p>Automated detection of traffic and behavior anomalies</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">10</span>
+                            <div class="item-content">
+                                <h4>Conversion Tracking</h4>
+                                <p>Automated tracking of e-commerce and lead conversions</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">11</span>
+                            <div class="item-content">
+                                <h4>Segmentation Automation</h4>
+                                <p>Automated creation and update of user segments</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">12</span>
+                            <div class="item-content">
+                                <h4>Data Studio Integration</h4>
+                                <p>Live dashboards and automated data synchronization</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">13</span>
+                            <div class="item-content">
+                                <h4>Event Tracking Automation</h4>
+                                <p>Automated event setup with Google Tag Manager</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Google Workspace Automation -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">📁</div>
+                        <h3>Workspace Automations</h3>
+                    </div>
+                    <ul class="service-items">
+                        <li>
+                            <span class="item-number">14</span>
+                            <div class="item-content">
+                                <h4>Gmail Automation</h4>
+                                <p>Automated email sorting, replying, and follow-up</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">15</span>
+                            <div class="item-content">
+                                <h4>Sheets Data Integration</h4>
+                                <p>Automated data fetching and updating from APIs</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">16</span>
+                            <div class="item-content">
+                                <h4>Drive File Management</h4>
+                                <p>Automated file organization and backup</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">17</span>
+                            <div class="item-content">
+                                <h4>Forms - Sheets Integration</h4>
+                                <p>Automated processing and reporting of form responses</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">18</span>
+                            <div class="item-content">
+                                <h4>Calendar Synchronization</h4>
+                                <p>Meeting scheduling and reminder automations</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">19</span>
+                            <div class="item-content">
+                                <h4>Apps Script Development</h4>
+                                <p>Script automation for custom workflows</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Search Console Automation -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">🔍</div>
+                        <h3>Search Console Automations</h3>
+                    </div>
+                    <ul class="service-items">
+                        <li>
+                            <span class="item-number">20</span>
+                            <div class="item-content">
+                                <h4>Automated Indexing Requests</h4>
+                                <p>Automatically notifying Google of new content</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">21</span>
+                            <div class="item-content">
+                                <h4>Error Monitoring and Notification</h4>
+                                <p>Automated detection of crawl errors and 404s</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">22</span>
+                            <div class="item-content">
+                                <h4>Performance Tracking</h4>
+                                <p>Automated tracking of keyword rankings</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">23</span>
+                            <div class="item-content">
+                                <h4>Sitemap Management</h4>
+                                <p>Dynamic sitemap creation and update</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">24</span>
+                            <div class="item-content">
+                                <h4>Core Web Vitals Monitoring</h4>
+                                <p>Continuous tracking of page experience metrics</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Advanced Integrations -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">🔗</div>
+                        <h3>Advanced Integrations</h3>
+                    </div>
+                    <ul class="service-items">
+                        <li>
+                            <span class="item-number">25</span>
+                            <div class="item-content">
+                                <h4>CRM Integration</h4>
+                                <p>Google Ads - CRM data synchronization</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">26</span>
+                            <div class="item-content">
+                                <h4>E-commerce Platform Connection</h4>
+                                <p>Shopify, WooCommerce, Magento integrations</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">27</span>
+                            <div class="item-content">
+                                <h4>Slack/Teams Notifications</h4>
+                                <p>Instant notification of key metrics</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">28</span>
+                            <div class="item-content">
+                                <h4>Zapier/Make Integrations</h4>
+                                <p>Connecting with thousands of applications</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">29</span>
+                            <div class="item-content">
+                                <h4>BigQuery Data Transfer</h4>
+                                <p>Automated data pipeline for big data analysis</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">30</span>
+                            <div class="item-content">
+                                <h4>Custom API Development</h4>
+                                <p>API solutions for custom needs</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="service-cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-glow"></div>
+                <div class="cta-content">
+                    <h2>Ready to <span class="gradient-text">Automate Your Google Tools?</span></h2>
+                    <p>
+                        Reclaim the hours you spend on manual processes. Let us optimize your Google ecosystem
+                        with AI and focus on your business.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/905326947419" target="_blank" class="btn btn-primary btn-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            <span>Contact via WhatsApp</span>
+                        </a>
+                        <a href="https://t.me/serhankuyumcu" target="_blank" class="btn btn-ghost btn-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg>
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">✦</span>
+                        <span class="logo-text">Ai-<span class="logo-accent">Agent</span></span>
+                    </a>
+                    <p>We carry your business to the future with Artificial Intelligence. Accelerate your digital
+                        transformation with modern AI solutions.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="ai-seo.html">AI SEO</a></li>
+
+                            <li><a href="google-automations.html">Google Automations</a></li>
+                            <li><a href="mobile-apps.html">Mobile App</a></li>
+                            <li><a href="ai-websites.html">AI Websites</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="privacy-policy.html">GDPR</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ai-Agent. All rights reserved.</p>
+                <p>Made with <span class="heart">❤</span> in Turkey</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/905326947419" target="_blank" class="fab fab-whatsapp" aria-label="Contact via WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <span class="fab-tooltip">WhatsApp</span>
+        </a>
+        <a href="https://t.me/serhankuyumcu" target="_blank" class="fab fab-telegram" aria-label="Contact via Telegram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+            </svg>
+            <span class="fab-tooltip">Telegram</span>
+        </a>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

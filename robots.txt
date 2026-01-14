@@ -1,0 +1,23 @@
+# AI-Agent Robots.txt
+# Antalya Dijital Dönüşüm - SEO Optimized
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://ai-agent.com.tr/sitemap.xml
+
+# Disallow admin/private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$ 
+Allow: /sitemap.xml
+
+# Allow CSS and JS for better crawling
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Crawl Delay (optional, adjust if needed)
+Crawl-delay: 1

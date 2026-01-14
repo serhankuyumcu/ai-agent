@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AI Uyumlu Web Siteleri - Yapay zeka entegre modern web siteleri. Hızlı, responsive ve kullanıcı deneyimi odaklı web tasarım hizmetleri.">
+    <title>AI Uyumlu Web Siteleri | Ai-Agent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/service-page.css">
+</head>
+
+<body>
+    <!-- Stars Background -->
+    <div class="stars-container" id="stars"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Ai-<span class="logo-accent">Agent</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="index.html#services" class="nav-link">Hizmetler</a></li>
+                <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+                <li><a href="index.html#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="lang-dropdown"><button class="lang-dropdown-btn" id="langDropdownBtn"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg><span>TR</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="dropdown-arrow">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg></button>
+                <div class="lang-dropdown-menu" id="langDropdownMenu"><a href="ai-web-siteleri.html"
+                        class="lang-dropdown-item active"><span class="lang-flag">🇹🇷</span><span>Türkçe</span></a><a
+                        href="en/ai-websites.html" class="lang-dropdown-item"><span
+                            class="lang-flag">🇬🇧</span><span>English</span></a><a href="ru/ai-websites.html"
+                        class="lang-dropdown-item"><span class="lang-flag">🇷🇺</span><span>Русский</span></a></div>
+            </div>
+            <a href="index.html#contact" class="btn btn-primary nav-cta">Ücretsiz Danışmanlık</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menüyü Aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="hero-glow"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <a href="index.html#services" class="back-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m15 18-6-6 6-6" />
+                    </svg>
+                    Tüm Hizmetler
+                </a>
+                <div class="service-badge">
+                    <span class="badge-icon">🌐</span>
+                    <span>AI Uyumlu Web Siteleri</span>
+                </div>
+                <h1 class="service-title">
+                    <span class="title-line">Yapay Zeka ile</span>
+                    <span class="title-line gradient-text">Akıllı Web Siteleri</span>
+                </h1>
+                <p class="service-description">
+                    Modern, hızlı ve AI destekli web siteleri geliştiriyoruz. Chatbot'lardan kişiselleştirilmiş
+                    kullanıcı deneyimine, otomatik içerik üretiminden akıllı arama sistemlerine kadar -
+                    web siteniz yapay zeka ile çalışsın, rakiplerinizden öne geçin.
+                </p>
+                <div class="service-hero-buttons">
+                    <a href="https://wa.me/905326947419" target="_blank" class="btn btn-primary btn-lg">
+                        <span>Hemen Teklif Al</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why AI Websites Section -->
+    <section class="ai-revolution">
+        <div class="container">
+            <div class="revolution-grid">
+                <div class="revolution-content">
+                    <span class="section-badge">Neden AI Uyumlu?</span>
+                    <h2 class="section-title">Statik Siteler <span class="gradient-text">Geride Kaldı</span></h2>
+                    <p class="revolution-text">
+                        Günümüzde web siteleri sadece bilgi göstermekle kalmıyor, kullanıcılarla etkileşime giriyor.
+                        <strong>Yapay zeka entegrasyonları</strong> ile siteniz ziyaretçileriyle sohbet edebilir,
+                        onlara özel içerikler sunabilir, davranışlarını analiz edip optimize olabilir.
+                        Modern web artık akıllı web demek.
+                    </p>
+                    <div class="stats-row">
+                        <div class="stat-box">
+                            <span class="stat-value">3x</span>
+                            <span class="stat-desc">Daha yüksek dönüşüm</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value">50%</span>
+                            <span class="stat-desc">Daha az destek talebi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="revolution-visual">
+                    <div class="comparison-card">
+                        <div class="comparison-item old">
+                            <div class="comparison-header">
+                                <span class="comparison-icon">📄</span>
+                                <span class="comparison-label">Klasik Web</span>
+                            </div>
+                            <ul>
+                                <li>Statik içerik</li>
+                                <li>Manuel güncellemeler</li>
+                                <li>Tek tip deneyim</li>
+                                <li>Sınırlı etkileşim</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-divider">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
+                        </div>
+                        <div class="comparison-item new">
+                            <div class="comparison-header">
+                                <span class="comparison-icon">🤖</span>
+                                <span class="comparison-label">AI Web</span>
+                            </div>
+                            <ul>
+                                <li>Dinamik, akıllı içerik</li>
+                                <li>Otomatik optimizasyon</li>
+                                <li>Kişiselleştirilmiş UX</li>
+                                <li>AI chatbot desteği</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="ai-agents">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Teknolojiler</span>
+                <h2 class="section-title">Hangi <span class="gradient-text">Teknolojileri</span> Kullanıyoruz?</h2>
+                <p class="section-description">
+                    Modern ve performanslı web teknolojileri ile projelerinizi hayata geçiriyoruz.
+                </p>
+            </div>
+
+            <div class="agents-grid">
+                <div class="agent-card">
+                    <div class="agent-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path
+                                d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38a2.167 2.167 0 0 0-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44a23.476 23.476 0 0 0-3.107-.534A23.892 23.892 0 0 0 12.769 4.7c1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442a22.73 22.73 0 0 0-3.113.538 15.02 15.02 0 0 1-.254-1.42c-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87a25.64 25.64 0 0 1-4.412.005 26.64 26.64 0 0 1-1.183-1.86c-.372-.64-.71-1.29-1.018-1.946a25.17 25.17 0 0 1 1.013-1.954c.38-.66.773-1.286 1.18-1.868A25.245 25.245 0 0 1 12 8.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933a25.952 25.952 0 0 0-1.345-2.32zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493a23.966 23.966 0 0 0-1.1-2.98c.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98a23.142 23.142 0 0 0-1.086 2.964c-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39a25.819 25.819 0 0 0 1.341-2.338zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143a22.005 22.005 0 0 1-2.006-.386c.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295a1.185 1.185 0 0 1-.553-.132c-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z" />
+                        </svg>
+                    </div>
+                    <h3>React/Next.js</h3>
+                    <p>Modern JavaScript framework'leri</p>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path
+                                d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z" />
+                        </svg>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Güçlü backend API'ler</p>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path
+                                d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" />
+                        </svg>
+                    </div>
+                    <h3>Tailwind CSS</h3>
+                    <p>Utility-first CSS framework</p>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path
+                                d="M11.9 1.036c-4.656 0-8.428 3.771-8.428 8.427 0 4.656 3.772 8.428 8.428 8.428 4.656 0 8.427-3.772 8.427-8.428 0-4.656-3.771-8.427-8.427-8.427zm-.001 1.628c3.808 0 6.901 3.092 6.901 6.9 0 3.807-3.093 6.899-6.901 6.899-3.807 0-6.9-3.092-6.9-6.9 0-3.807 3.093-6.899 6.9-6.899zM11.9 19.1c-5.332 0-9.656 4.324-9.656 9.656h1.627c0-4.455 3.575-8.028 8.029-8.028s8.028 3.573 8.028 8.028h1.627c0-5.332-4.324-9.656-9.655-9.656z" />
+                        </svg>
+                    </div>
+                    <h3>Headless CMS</h3>
+                    <p>Strapi, Contentful, Sanity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services List Section -->
+    <section class="services-list" id="hizmetler">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Kapsamlı Hizmetler</span>
+                <h2 class="section-title">Web Tasarım & <span class="gradient-text">Geliştirme Paketimiz</span></h2>
+                <p class="section-description">
+                    Modern, hızlı ve AI destekli web siteleri için ihtiyacınız olan her şey.
+                </p>
+            </div>
+
+            <div class="services-categories">
+                <!-- Web Design -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">🎨</div>
+                        <h3>Web Tasarım</h3>
+                    </div>
+                    <ul class="service-items">
+                        <li>
+                            <span class="item-number">01</span>
+                            <div class="item-content">
+                                <h4>Modern UI/UX Tasarımı</h4>
+                                <p>Kullanıcı deneyimi odaklı, çağdaş arayüz tasarımları</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">02</span>
+                            <div class="item-content">
+                                <h4>Responsive Design</h4>
+                                <p>Mobil, tablet ve desktop için tam uyumlu tasarım</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">03</span>
+                            <div class="item-content">
+                                <h4>Brand Identity Entegrasyonu</h4>
+                                <p>Marka kimliğinizi yansıtan özel tasarım</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">04</span>
+                            <div class="item-content">
+                                <h4>Prototipleme & Wireframe</h4>
+                                <p>Figma ile etkileşimli prototipler</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">05</span>
+                            <div class="item-content">
+                                <h4>Animasyon & Mikroetkileşimler</h4>
+                                <p>Kullanıcı deneyimini zenginleştiren animasyonlar</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Frontend Development -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">💻</div>
+                        <h3>Frontend Geliştirme</h3>
+                    </div>
+                    <ul class="service-items">
+                        <li>
+                            <span class="item-number">06</span>
+                            <div class="item-content">
+                                <h4>React/Next.js Development</h4>
+                                <p>Modern JavaScript framework'leri ile geliştirme</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">07</span>
+                            <div class="item-content">
+                                <h4>Vue.js/Nuxt.js Development</h4>
+                                <p>Progressive web app'ler için Vue ekosistemi</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">08</span>
+                            <div class="item-content">
+                                <h4>TypeScript Integration</h4>
+                                <p>Type-safe kod geliştirme</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">09</span>
+                            <div class="item-content">
+                                <h4>Tailwind CSS/Styled Components</h4>
+                                <p>Modern CSS çözümleri</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">10</span>
+                            <div class="item-content">
+                                <h4>Performance Optimization</h4>
+                                <p>Core Web Vitals optimizasyonu</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">11</span>
+                            <div class="item-content">
+                                <h4>Progressive Web App (PWA)</h4>
+                                <p>Offline çalışma ve app-like deneyim</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Backend & CMS -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">⚙️</div>
+                        <h3>Backend & CMS</h3>
+                    </div>
+                    <ul class="service-items">
+                        <li>
+                            <span class="item-number">12</span>
+                            <div class="item-content">
+                                <h4>Headless CMS Entegrasyonu</h4>
+                                <p>Strapi, Contentful, Sanity, Prismic</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">13</span>
+                            <div class="item-content">
+                                <h4>WordPress Development</h4>
+                                <p>Custom theme ve plugin geliştirme</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">14</span>
+                            <div class="item-content">
+                                <h4>E-ticaret Entegrasyonu</h4>
+                                <p>Shopify, WooCommerce, custom çözümler</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">15</span>
+                            <div class="item-content">
+                                <h4>Custom API Development</h4>
+                                <p>RESTful ve GraphQL API'ler</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">16</span>
+                            <div class="item-content">
+                                <h4>Database Design</h4>
+                                <p>PostgreSQL, MongoDB, MySQL</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">17</span>
+                            <div class="item-content">
+                                <h4>Authentication & Authorization</h4>
+                                <p>Güvenli kullanıcı yönetim sistemleri</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- AI Features -->
+                <div class="service-category featured">
+                    <div class="category-header">
+                        <div class="category-icon">🤖</div>
+                        <h3>AI Özellikleri</h3>
+                        <span class="category-badge">Yeni</span>
+                    </div>
+                    <ul class="service-items">
+                        <li>
+                            <span class="item-number">18</span>
+                            <div class="item-content">
+                                <h4>AI Chatbot Entegrasyonu</h4>
+                                <p>ChatGPT, Claude ile 7/24 müşteri desteği</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">19</span>
+                            <div class="item-content">
+                                <h4>Kişiselleştirilmiş İçerik</h4>
+                                <p>Kullanıcı davranışına göre özel içerik gösterimi</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">20</span>
+                            <div class="item-content">
+                                <h4>AI Arama Sistemi</h4>
+                                <p>Doğal dil işleme ile akıllı site araması</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">21</span>
+                            <div class="item-content">
+                                <h4>Otomatik İçerik Üretimi</h4>
+                                <p>AI ile blog yazıları ve ürün açıklamaları</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">22</span>
+                            <div class="item-content">
+                                <h4>Öneri Sistemleri</h4>
+                                <p>AI destekli ürün/içerik önerileri</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">23</span>
+                            <div class="item-content">
+                                <h4>Sentiment Analizi</h4>
+                                <p>Kullanıcı geri bildirimlerini AI ile analiz</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">24</span>
+                            <div class="item-content">
+                                <h4>Görsel Tanıma</h4>
+                                <p>AI ile görsel arama ve etiketleme</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- SEO & Performance -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">🚀</div>
+                        <h3>SEO & Performance</h3>
+                    </div>
+                    <ul class="service-items">
+                        <li>
+                            <span class="item-number">25</span>
+                            <div class="item-content">
+                                <h4>Teknik SEO</h4>
+                                <p>Site yapısı, meta tags, schema markup</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">26</span>
+                            <div class="item-content">
+                                <h4>Sayfa Hızı Optimizasyonu</h4>
+                                <p>Google PageSpeed 90+ skorlar</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">27</span>
+                            <div class="item-content">
+                                <h4>Image Optimization</h4>
+                                <p>WebP, lazy loading, CDN entegrasyonu</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">28</span>
+                            <div class="item-content">
+                                <h4>Server-Side Rendering (SSR)</h4>
+                                <p>SEO ve performans için SSR/SSG</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">29</span>
+                            <div class="item-content">
+                                <h4>Lighthouse Optimization</h4>
+                                <p>Accessibility, Best Practices, SEO</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hosting & Maintenance -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">🔧</div>
+                        <h3>Hosting & Bakım</h3>
+                    </div>
+                    <ul class="service-items">
+                        <li>
+                            <span class="item-number">30</span>
+                            <div class="item-content">
+                                <h4>Cloud Hosting</h4>
+                                <p>Vercel, Netlify, AWS, Google Cloud</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">31</span>
+                            <div class="item-content">
+                                <h4>SSL Sertifikası</h4>
+                                <p>Ücretsiz Let's Encrypt veya premium SSL</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">32</span>
+                            <div class="item-content">
+                                <h4>Domain Yönetimi</h4>
+                                <p>Alan adı kayıt ve DNS konfigürasyonu</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">33</span>
+                            <div class="item-content">
+                                <h4>Otomatik Yedekleme</h4>
+                                <p>Günlük otomatik backup sistemleri</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">34</span>
+                            <div class="item-content">
+                                <h4>Güvenlik & Updates</h4>
+                                <p>Firewall, DDoS koruması, düzenli güncellemeler</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">35</span>
+                            <div class="item-content">
+                                <h4>Analytics & Monitoring</h4>
+                                <p>Google Analytics, Hotjar, uptime monitoring</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="item-number">36</span>
+                            <div class="item-content">
+                                <h4>Sürekli Bakım & Destek</h4>
+                                <p>Aylık güncellemeler ve teknik destek</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="service-cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-glow"></div>
+                <div class="cta-content">
+                    <h2>Web Sitenizi <span class="gradient-text">AI ile Güçlendirin</span></h2>
+                    <p>
+                        Modern, hızlı ve yapay zeka entegreli bir web sitesiyle rakiplerinizden
+                        öne geçin. İşinizi dijital dünyaya taşıyalım.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/905326947419" target="_blank" class="btn btn-primary btn-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            <span>WhatsApp ile İletişim</span>
+                        </a>
+                        <a href="https://t.me/serhankuyumcu" target="_blank" class="btn btn-ghost btn-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg>
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">✦</span>
+                        <span class="logo-text">Ai-<span class="logo-accent">Agent</span></span>
+                    </a>
+                    <p>Yapay zeka ile işletmenizi geleceğe taşıyoruz. Modern AI çözümleri ile dijital dönüşümünüzü
+                        hızlandırın.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Hizmetler</h4>
+                        <ul>
+                            <li><a href="yapayzeka-seo.html">Yapay Zeka SEO</a></li>
+                            <li><a href="google-otomasyonlari.html">Google Otomasyonları</a></li>
+                            <li><a href="mobil-uygulama.html">Mobil Uygulama</a></li>
+                            <li><a href="ai-web-siteleri.html">AI Web Siteleri</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Şirket</h4>
+                        <ul>
+                            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                            <li><a href="index.html#contact">İletişim</a></li>
+                            <li><a href="#">Kariyer</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Destek</h4>
+                        <ul>
+                            <li><a href="#">SSS</a></li>
+                            <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+                            <li><a href="#">Kullanım Şartları</a></li>
+                            <li><a href="gizlilik-politikasi.html">KVKK</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ai-Agent. Tüm hakları saklıdır.</p>
+                <p>Made with <span class="heart">❤</span> in Türkiye</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/905326947419" target="_blank" class="fab fab-whatsapp"
+            aria-label="WhatsApp ile iletişim">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <span class="fab-tooltip">WhatsApp</span>
+        </a>
+        <a href="https://t.me/serhankuyumcu" target="_blank" class="fab fab-telegram"
+            aria-label="Telegram ile iletişim">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+            </svg>
+            <span class="fab-tooltip">Telegram</span>
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

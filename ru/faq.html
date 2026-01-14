@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Часто задаваемые вопросы (ЧАВО) | AI-Agent Цифровая трансформация</title>
+    <meta name="description"
+        content="Часто задаваемые вопросы о цифровой трансформации, искусственном интеллекте, веб-дизайне и SEO-услугах в Анталии. Мы обслуживаем Кепез, Коньяалты, Муратпашу и Лару.">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+
+    <!-- Schema Markup - FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что такое агентство цифрового маркетинга и зачем оно мне нужно?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Агентство цифрового маркетинга — это профессиональная организация, предлагающая такие услуги, как SEO, Google Ads, управление социальными сетями и контент-маркетинг для укрепления присутствия вашего бизнеса в Интернете. Работа с агентством цифрового маркетинга имеет решающее значение для того, чтобы выделиться на конкурентном рынке Анталии, охватить больше клиентов и увеличить продажи."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Есть ли курсы по искусственному интеллекту в Анталии?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, как AI-Agent, мы предлагаем обучение и курсы по искусственному интеллекту в Анталии. Наши курсы организованы на разных уровнях, от начального до продвинутого. Мы можем проводить обучение в районах Кепез, Коньяалты, Муратпаша и Лара. Вы можете научиться оптимизировать свои бизнес-процессы с помощью ИИ, использовать инструменты ИИ и осуществлять цифровую трансформацию."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .faq-container {
+            max-width: 1200px;
+            margin: 120px auto 80px;
+            padding: 0 20px;
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .faq-header h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .faq-header p {
+            font-size: 20px;
+            color: #ccc;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 60px;
+        }
+
+        .category-filter {
+            padding: 12px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            font-weight: 500;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .category-filter:hover,
+        .category-filter.active {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            border-color: #667eea;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 18px;
+            color: #fff;
+            user-select: none;
+        }
+
+        .faq-question:hover {
+            color: #667eea;
+        }
+
+        .faq-icon {
+            font-size: 24px;
+            transition: transform 0.3s;
+            color: #667eea;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 800px;
+        }
+
+        .faq-answer-content {
+            padding: 0 30px 25px;
+            color: #aaa;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .faq-cta {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .faq-cta h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .faq-cta p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #aaa;
+        }
+
+        .faq-cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .faq-cta-button {
+            padding: 15px 35px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .faq-cta-button:hover {
+            background: #fff;
+            color: #000;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .faq-header h1 {
+                font-size: 32px;
+            }
+
+            .faq-question {
+                font-size: 16px;
+                padding: 20px;
+            }
+
+            .faq-answer-content {
+                padding: 0 20px 20px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Stars Background -->
+    <div class="stars-container" id="stars"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Ai-<span class="logo-accent">Agent</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="index.html#services" class="nav-link">Услуги</a></li>
+                <li><a href="about-us.html" class="nav-link">О нас</a></li>
+                <li><a href="faq.html" class="nav-link active">ЧАВО</a></li>
+                <li><a href="index.html#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="lang-dropdown"><button class="lang-dropdown-btn" id="langDropdownBtn"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg><span>RU</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="dropdown-arrow">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg></button>
+                <div class="lang-dropdown-menu" id="langDropdownMenu"><a href="../sss.html"
+                        class="lang-dropdown-item"><span class="lang-flag">🇹🇷</span><span>Türkçe</span></a><a
+                        href="../en/faq.html" class="lang-dropdown-item"><span
+                            class="lang-flag">🇬🇧</span><span>English</span></a><a href="faq.html"
+                        class="lang-dropdown-item active"><span class="lang-flag">🇷🇺</span><span>Русский</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="faq-container">
+        <div class="faq-header">
+            <h1>Часто задаваемые вопросы</h1>
+            <p>Все, что вы хотели знать о наших услугах в области цифровой трансформации, ИИ и веб-дизайна в Анталии.
+            </p>
+        </div>
+
+        <div class="faq-categories">
+            <button class="category-filter active" data-category="all">Все</button>
+            <button class="category-filter" data-category="dijital-pazarlama">Диджитал-маркетинг</button>
+            <button class="category-filter" data-category="yapay-zeka">Искусственный интеллект</button>
+            <button class="category-filter" data-category="web-tasarim">Веб-дизайн</button>
+            <button class="category-filter" data-category="seo">SEO</button>
+            <button class="category-filter" data-category="kurumsal-ai">Корпоративный ИИ</button>
+        </div>
+
+        <div class="faq-list">
+            <!-- Диджитал-маркетинг -->
+            <div class="faq-item" data-category="dijital-pazarlama">
+                <div class="faq-question">
+                    <span>1. Что такое агентство цифрового маркетинга и зачем оно мне нужно?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Агентство цифрового маркетинга — это профессиональная организация, предлагающая такие услуги,
+                        как
+                        SEO, Google Ads, управление социальными сетями и контент-маркетинг. В Анталии работа с
+                        агентством, знающим местный рынок (Кепез, Коньяалты, Муратпаша, Лара), критически важна для
+                        привлечения большего количества клиентов и увеличения продаж.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="dijital-pazarlama">
+                <div class="faq-question">
+                    <span>2. Сколько стоят услуги диджитал-агентства в Анталии?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Услуги обычно предоставляются в виде ежемесячных пакетов. В Анталии стартовые пакеты могут
+                        стоить 5 000–10 000 лир, средние — 10 000–20 000 лир, а комплексные — от 20 000 лир. Цена
+                        зависит от объема SEO, бюджета Google Ads и управления соцсетями. AI-Agent предлагает прозрачное
+                        ценообразование и скидку 20% на первый месяц.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="dijital-pazarlama">
+                <div class="faq-question">
+                    <span>3. Могу ли я пройти обучение цифровому маркетингу?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Да! AI-Agent проводит тренинги по SEO, Google Ads, стратегии контента и SMM в Анталии. Мы
+                        предлагаем как индивидуальные, так и корпоративные программы с практическими занятиями и
+                        сертификацией.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Искусственный интеллект -->
+            <div class="faq-item" data-category="yapay-zeka">
+                <div class="faq-question">
+                    <span>4. Есть ли курсы по искусственному интеллекту в Анталии?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Да, мы предлагаем курсы по ИИ от начального до продвинутого уровня в Кепезе, Коньяалты,
+                        Муратпаше и Ларе. Вы научитесь использовать ChatGPT, Midjourney, инструменты AI SEO и системы
+                        автоматизации для оптимизации бизнес-процессов.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="yapay-zeka">
+                <div class="faq-question">
+                    <span>5. Как ИИ может трансформировать мой бизнес?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        С ИИ вы можете внедрить чат-ботов для поддержки, автоматизировать создание контента,
+                        оптимизировать цены и анализировать данные. Для отелей Анталии особенно выгодны системы
+                        бронирования на базе ИИ с поддержкой нескольких языков.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="yapay-zeka">
+                <div class="faq-question">
+                    <span>6. Сколько длится обучение ИИ?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        От однодневных воркшопов до 3-месячных программ. Базовое ознакомление занимает 1 день, курсы по
+                        практическим инструментам — 1 неделю, а продвинутая разработка — 2-3 месяца.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Веб-дизайн -->
+            <div class="faq-item" data-category="web-tasarim">
+                <div class="faq-question">
+                    <span>7. Сколько стоит веб-дизайн в Анталии?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Корпоративный сайт — 15 000–30 000 лир, интернет-магазин — 30 000–80 000 лир. AI-Agent
+                        предоставляет бесплатный расчет. В цену входят хостинг, SSL и 1 год техподдержки.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="web-tasarim">
+                <div class="faq-question">
+                    <span>8. За какое время сайт будет готов?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Простой сайт — 2-3 недели, интернет-магазин — 4-6 недель, сложные проекты — 2-3 месяца. Мы
+                        гарантируем сроки и еженедельно отчитываемся о ходе работ.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="web-tasarim">
+                <div class="faq-question">
+                    <span>9. Почему важен мобильный сайт?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        80% пользователей в Турции заходят с мобильных устройств. Для туризма в Анталии это критично.
+                        Сайты, не адаптированные под мобильные, теряют позиции в поиске Google. Все наши сайты
+                        создаются по принципу mobile-first.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="web-tasarim">
+                <div class="faq-question">
+                    <span>10. На что обратить внимание при разработке сайта отеля?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Обязательны система онлайн-бронирования, галерея номеров, календарь цен, поддержка языков
+                        (русский, английский, немецкий), виртуальный тур и отзывы. Важна также интеграция с Booking.com.
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEO -->
+            <div class="faq-item" data-category="seo">
+                <div class="faq-question">
+                    <span>11. Как скоро SEO принесет результаты?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Результаты заметны через 3-6 месяцев. Первые 1-2 месяца уходят на техническую оптимизацию, на
+                        3-4 месяц растут позиции, с 6 месяца — стабильный трафик.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="seo">
+                <div class="faq-question">
+                    <span>12. Что такое локальное SEO?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Это продвижение в конкретном районе (Кепез, Коньяалты и др.). Оптимизация Google My Business
+                        позволяет клиентам находить вас по запросам типа "сантехник кепез" или "ресторан коньяалты".
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="seo">
+                <div class="faq-question">
+                    <span>13. Как делается SEO с помощью ИИ?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Мы используем ИИ для подбора ключевых слов, анализа конкурентов и автоматизации контента. Это
+                        позволяет быстрее адаптироваться к изменениям алгоритмов Google и обходить конкурентов.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="seo">
+                <div class="faq-question">
+                    <span>14. Почему важен Google My Business?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Профиль GMB выводит ваш бизнес в Google Maps. Это бесплатно и показывает ваши часы работы,
+                        фото, отзывы и контакты. Мы предлагаем бесплатную оптимизацию GMB.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Разное -->
+            <div class="faq-item" data-category="dijital-pazarlama">
+                <div class="faq-question">
+                    <span>15. В чем разница между Google Ads и SEO?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Ads — платная реклама с мгновенным результатом. SEO — долгосрочная инвестиция в бесплатный
+                        трафик. Идеальна комбинация обоих методов.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="web-tasarim">
+                <div class="faq-question">
+                    <span>16. Что нужно интернет-магазину?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Безопасные платежи (SSL), управление складом, интеграция службы доставки, корзина и личный
+                        кабинет. Мы внедряем все эти функции под ключ.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="dijital-pazarlama">
+                <div class="faq-question">
+                    <span>17. Почему важен SMM?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Instagram и Facebook в Анталии — мощные каналы продаж. Регулярный контент и таргетированная
+                        реклама строят доверие и лояльность бренда.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="yapay-zeka">
+                <div class="faq-question">
+                    <span>18. Полезен ли ИИ-чатбот?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Чат-боты 24/7 отвечают клиентам на разных языках, собирают заявки и записывают на визит. Это
+                        экономит время сотрудников и улучшает сервис.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="web-tasarim">
+                <div class="faq-question">
+                    <span>19. Как создать цифровое меню?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Цифровое QR-меню — это мобильное приложение с фото, описанием и языками. Особенно важно для
+                        иностранных туристов. Цена начинается от 3 000 лир.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="dijital-pazarlama">
+                <div class="faq-question">
+                    <span>20. С чего начать трансформацию?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        С современного сайта и профиля в Google Haritalar. Мы предлагаем бесплатную консультацию и
+                        строим пошаговый план развития. Звоните: +90 532 694 74 19.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Корпоративный ИИ -->
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>21. Зачем малому бизнесу трансформация на базе ИИ?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        ИИ позволяет малым фирмам конкурировать с крупными корпорациями за счет автоматизации сервиса и
+                        снижения операционных расходов до 40%.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>22. Как ИИ делает исследование рынка?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Наши ИИ-агенты анализируют миллиарды данных в сети, выявляя тренды и слабые места конкурентов в
+                        Анталии за минуты, а не недели.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>23. Оптимизация склада с ИИ?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        ИИ прогнозирует спрос на основе прошлых продаж и сезонов, снижая издержки на хранение на 25% и
+                        предотвращая дефицит товара.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>24. Что такое динамическое ценообразование?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Система автоматически меняет цены в зависимости от спроса и цен конкурентов. Это повышает
+                        рентабельность отелей и аренды авто на 30%.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>25. Можно ли следить за конкурентами через ИИ?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Да, ИИ 24/7 отслеживает изменения на сайтах, в ценах и рекламе ваших конкурентов, позволяя вам
+                        мгновенно реагировать на их акции.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>26. ИИ в управлении персоналом (HR)?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        ИИ фильтрует тысячи резюме, подбирая лучших кандидатов, а также оптимизирует графики смен для
+                        отелей, минимизируя расходы на переработки.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>27. Анализ отзывов клиентов с ИИ?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        ИИ классифицирует тысячи отзывов на "позитивные" и "негативные", выявляя коренные причины жалоб
+                        (сервис, цена и др.) для их быстрого устранения.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>28. Финансовое прогнозирование с ИИ?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        ИИ анализирует финансовые данные и предсказывает денежные потоки на 3-12 месяцев вперед, помогая
+                        принимать безопасные инвестиционные решения.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>29. Автоматизация воронки продаж?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        ИИ ведет клиента от посещения сайта до покупки, отправляя авто-письма и сообщения в WhatsApp,
+                        что повышает конверсию в 3 раза.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>30. ИИ в цепочках поставок?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        ИИ оптимизирует логистику, снижая транспортные расходы на 20% и предотвращая задержки
+                        поставок.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>31. Что такое персонализация клиента?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Это создание личных предложений для каждого покупателя на основе его истории. Это повышает
+                        лояльность и средний чек.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>32. Предотвращение мошенничества (Fraud Detection)?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        ИИ мгновенно блокирует сомнительные транзакции в интернет-магазинах, защищая ваши средства и
+                        доверие клиентов.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>33. Прогнозное обслуживание (Predictive Maintenance)?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        ИИ предсказывает поломки оборудования на производстве за дни до их случая, экономя огромные
+                        суммы на ремонте.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>34. Интеграция с ERP/CRM (SAP, Micro и др.)?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Да, мы встраиваем слой ИИ в ваши текущие программы через API. Вам не нужно менять софт, чтобы
+                        он стал "умным".
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>35. Автоматическая отчетность?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Вместо Excel-таблиц вы получаете живые дашборды, где все показатели вашего бизнеса видны в
+                        реальном времени.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>36. ИИ-перевод в туризме?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Чат-боты на базе ИИ мгновенно общаются с туристами на их языке (русском, немецком и др.), удаляя
+                        языковой барьер 24/7.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>37. Стоимость и окупаемость ИИ?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        ИИ — это инвестиция. Обычно внедрение окупается за 6 месяцев за счет роста продаж и экономии на
+                        персонале (ROI +25%).
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>38. Безопасность данных и закон?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Все данные шифруются и обрабатываются строго по законам KVKK (Турция) и GDPR (Европа). Мы
+                        гарантируем коммерческую тайну.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>39. Можно ли обучить ИИ на моих данных?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Да, мы создаем "Custom GPT", которые знают только ваши товары и регламенты, становясь идеальным
+                        помощником для сотрудников.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" data-category="kurumsal-ai">
+                <div class="faq-question">
+                    <span>40. Какие данные нужны для старта?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Достаточно ваших записей продаж, списка клиентов или данных трафика сайта. Мы поможем собрать и
+                        структурировать все необходимое.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="faq-cta">
+            <h2>Не нашли ответ на свой вопрос?</h2>
+            <p>Наша экспертная команда по цифровой трансформации и ИИ в Анталии готова помочь вам!</p>
+            <div class="faq-cta-buttons">
+                <a href="tel:+905326947419" class="faq-cta-button">📞 Позвонить сейчас</a>
+                <a href="https://wa.me/905326947419" class="faq-cta-button">💬 WhatsApp</a>
+                <a href="mailto:info@ai-agent.com.tr" class="faq-cta-button">📧 Отправить Email</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">✦</span>
+                        <span class="logo-text">Ai-<span class="logo-accent">Agent</span></span>
+                    </a>
+                    <p>Мы переносим ваш бизнес в будущее с помощью технологий искусственного интеллекта. Ускорьте свою
+                        цифровую трансформацию с помощью современных ИИ-решений.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Услуги</h4>
+                        <ul>
+                            <li><a href="ai-seo.html">AI SEO</a></li>
+                            <li><a href="google-automations.html">Google Автоматизация</a></li>
+                            <li><a href="mobile-apps.html">Мобильные приложения</a></li>
+                            <li><a href="ai-websites.html">AI Веб-сайты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Компания</h4>
+                        <ul>
+                            <li><a href="about-us.html">О нас</a></li>
+                            <li><a href="index.html#contact">Контакты</a></li>
+                            <li><a href="#">Карьера</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Поддержка</h4>
+                        <ul>
+                            <li><a href="faq.html">ЧАВО</a></li>
+                            <li><a href="privacy-policy.html">Политика конфиденциальности</a></li>
+                            <li><a href="#">Условия использования</a></li>
+                            <li><a href="privacy-policy.html">KVKK</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ai-Agent. Все права защищены.</p>
+                <p>Сделано с <span class="heart">❤</span> в Турции</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/905326947419" target="_blank" class="fab fab-whatsapp"
+            aria-label="Связаться через WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <span class="fab-tooltip">WhatsApp</span>
+        </a>
+        <a href="https://t.me/serhankuyumcu" target="_blank" class="fab fab-telegram"
+            aria-label="Связаться через Telegram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+            </svg>
+            <span class="fab-tooltip">Telegram</span>
+        </a>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Category Filter
+        document.querySelectorAll('.category-filter').forEach(filter => {
+            filter.addEventListener('click', () => {
+                const category = filter.dataset.category;
+
+                // Update active filter
+                document.querySelectorAll('.category-filter').forEach(f => f.classList.remove('active'));
+                filter.classList.add('active');
+
+                // Filter FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- Floating Contact Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/905326947419" target="_blank" class="fab fab-whatsapp"
+            aria-label="Связаться через WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <span class="fab-tooltip">WhatsApp</span>
+        </a>
+        <a href="https://t.me/serhankuyumcu" target="_blank" class="fab fab-telegram"
+            aria-label="Связаться через Telegram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+            </svg>
+            <span class="fab-tooltip">Telegram</span>
+        </a>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
