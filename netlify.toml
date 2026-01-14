@@ -1,12 +1,6 @@
 [build]
   publish = "."
 
-[build.processing]
-  skip_processing = false
-
-[build.processing.html]
-  pretty_urls = true
-
 [[redirects]]
   from = "/index.html"
   to = "/"
@@ -21,3 +15,6 @@
   from = "/ru/index.html"
   to = "/ru/"
   status = 301
+
+# Netlify's default behavior often handles clean URLs if enabled in the UI.
+# If not, we will add manual redirects later.
