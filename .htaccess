@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# 1. Map extensionless request to .html file (Internal Rewrite)
+# Check if a file with .html extension exists for the request
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# 2. Redirect /index and /index.html to /
+RewriteCond %{THE_REQUEST} /index(\.html)? [NC]
+RewriteRule ^(.*)index(\.html)?$ / [L,R=301]
+
+# 3. Remove .html extension from visible URL (Redirect)
+# If a user manually types .html (and it's not index.html), redirect them to the clean version
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteCond %{REQUEST_URI} !index\.html$ [NC]
+RewriteRule ^ /%1 [L,R=301]
