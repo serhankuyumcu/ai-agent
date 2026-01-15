@@ -1,161 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- ==================== -->
+    <!-- ANA SAYFALAR (TR)    -->
+    <!-- ==================== -->
 
     <!-- Ana Sayfa -->
     <url>
         <loc>https://ai-agent.com.tr/</loc>
-        <lastmod>2026-01-13</lastmod>
+        <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-agent.com.tr/"/>
     </url>
 
-    <!-- Hizmet Sayfaları -->
+    <!-- Yapay Zeka SEO -->
     <url>
         <loc>https://ai-agent.com.tr/yapayzeka-seo</loc>
-        <lastmod>2026-01-13</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/yapayzeka-seo"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/ai-seo"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/ai-seo"/>
     </url>
 
+    <!-- Google Otomasyonlari -->
     <url>
         <loc>https://ai-agent.com.tr/google-otomasyonlari</loc>
-        <lastmod>2026-01-13</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/google-otomasyonlari"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/google-automations"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/google-automations"/>
     </url>
 
+    <!-- Mobil Uygulama -->
     <url>
         <loc>https://ai-agent.com.tr/mobil-uygulama</loc>
-        <lastmod>2026-01-13</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/mobil-uygulama"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/mobile-apps"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/mobile-apps"/>
     </url>
 
+    <!-- AI Web Siteleri -->
     <url>
         <loc>https://ai-agent.com.tr/ai-web-siteleri</loc>
-        <lastmod>2026-01-13</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/ai-web-siteleri"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/ai-websites"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/ai-websites"/>
     </url>
 
-    <!-- Hakkımızda -->
+    <!-- Hakkimizda -->
     <url>
         <loc>https://ai-agent.com.tr/hakkimizda</loc>
-        <lastmod>2026-01-13</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/hakkimizda"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/about-us"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/about-us"/>
     </url>
 
     <!-- SSS -->
     <url>
         <loc>https://ai-agent.com.tr/sss</loc>
-        <lastmod>2026-01-13</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/sss"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/faq"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/faq"/>
     </url>
 
-    <!-- Gizlilik Politikası -->
+    <!-- Gizlilik Politikasi -->
     <url>
         <loc>https://ai-agent.com.tr/gizlilik-politikasi</loc>
-        <lastmod>2026-01-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/gizlilik-politikasi"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/privacy-policy"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/privacy-policy"/>
     </url>
 
-    <!-- English Pages -->
-    <url><loc>https://ai-agent.com.tr/en/</loc><lastmod>2026-01-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://ai-agent.com.tr/en/ai-seo</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://ai-agent.com.tr/en/google-automations</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://ai-agent.com.tr/en/mobile-apps</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://ai-agent.com.tr/en/ai-websites</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://ai-agent.com.tr/en/about-us</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://ai-agent.com.tr/en/faq</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://ai-agent.com.tr/en/privacy-policy</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-
-    <!-- Russian Pages -->
-    <url><loc>https://ai-agent.com.tr/ru/</loc><lastmod>2026-01-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://ai-agent.com.tr/ru/ai-seo</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://ai-agent.com.tr/ru/google-automations</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://ai-agent.com.tr/ru/mobile-apps</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://ai-agent.com.tr/ru/ai-websites</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://ai-agent.com.tr/ru/about-us</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://ai-agent.com.tr/ru/faq</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://ai-agent.com.tr/ru/privacy-policy</loc><lastmod>2026-01-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-
-    <!-- Bölgesel Sayfalar (Eklenecek) -->
-    <url>
-        <loc>https://ai-agent.com.tr/bolgeler/kepez-dijital-donusum</loc>
-        <lastmod>2026-01-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://ai-agent.com.tr/bolgeler/konyaalti-ai-cozumleri</loc>
-        <lastmod>2026-01-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://ai-agent.com.tr/bolgeler/muratpasa-web-tasarim</loc>
-        <lastmod>2026-01-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://ai-agent.com.tr/bolgeler/lara-dijital-pazarlama</loc>
-        <lastmod>2026-01-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Sektör Sayfaları (Eklenecek) -->
-    <url>
-        <loc>https://ai-agent.com.tr/sektorler/turizm-dijital-donusum</loc>
-        <lastmod>2026-01-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://ai-agent.com.tr/sektorler/restoran-otomasyon</loc>
-        <lastmod>2026-01-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://ai-agent.com.tr/sektorler/emlak-crm-sistemi</loc>
-        <lastmod>2026-01-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://ai-agent.com.tr/sektorler/saglik-online-randevu</loc>
-        <lastmod>2026-01-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Blog (Eklenecek) -->
-    <url>
-        <loc>https://ai-agent.com.tr/blog</loc>
-        <lastmod>2026-01-13</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
+    <!-- ==================== -->
+    <!-- BLOG (TR)            -->
+    <!-- ==================== -->
 
     <url>
         <loc>https://ai-agent.com.tr/blog/antalya-dijital-pazarlama-ajansi-secimi</loc>
-        <lastmod>2026-01-13</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+
+    <!-- ==================== -->
+    <!-- ENGLISH PAGES        -->
+    <!-- ==================== -->
+
+    <url>
+        <loc>https://ai-agent.com.tr/en/</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-agent.com.tr/"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/en/ai-seo</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/yapayzeka-seo"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/ai-seo"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/ai-seo"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/en/google-automations</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/google-otomasyonlari"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/google-automations"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/google-automations"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/en/mobile-apps</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/mobil-uygulama"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/mobile-apps"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/mobile-apps"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/en/ai-websites</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/ai-web-siteleri"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/ai-websites"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/ai-websites"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/en/about-us</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/hakkimizda"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/about-us"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/about-us"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/en/faq</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/sss"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/faq"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/faq"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/en/privacy-policy</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/gizlilik-politikasi"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/privacy-policy"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/privacy-policy"/>
+    </url>
+
+    <!-- ==================== -->
+    <!-- RUSSIAN PAGES        -->
+    <!-- ==================== -->
+
+    <url>
+        <loc>https://ai-agent.com.tr/ru/</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-agent.com.tr/"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/ru/ai-seo</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/yapayzeka-seo"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/ai-seo"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/ai-seo"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/ru/google-automations</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/google-otomasyonlari"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/google-automations"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/google-automations"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/ru/mobile-apps</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/mobil-uygulama"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/mobile-apps"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/mobile-apps"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/ru/ai-websites</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/ai-web-siteleri"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/ai-websites"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/ai-websites"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/ru/about-us</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/hakkimizda"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/about-us"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/about-us"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/ru/faq</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/sss"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/faq"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/faq"/>
+    </url>
+
+    <url>
+        <loc>https://ai-agent.com.tr/ru/privacy-policy</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ai-agent.com.tr/gizlilik-politikasi"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ai-agent.com.tr/en/privacy-policy"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ai-agent.com.tr/ru/privacy-policy"/>
     </url>
 
 </urlset>
