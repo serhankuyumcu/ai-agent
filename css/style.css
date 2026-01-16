@@ -269,11 +269,6 @@ select {
     padding-left: 120px;
 }
 
-.mobile-menu-header,
-.mobile-cta {
-    display: none;
-}
-
 .nav-link {
     font-size: 0.95rem;
     font-weight: 500;
@@ -307,25 +302,50 @@ select {
     font-size: 0.9rem;
 }
 
+/* ==========================================
+   Mobile Menu System
+   ========================================== */
 .mobile-menu-btn {
     display: none;
     flex-direction: column;
-    gap: 5px;
-    padding: var(--space-sm);
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
     cursor: pointer;
+    background: transparent;
+    border: none;
+    z-index: 9999;
+    position: relative;
 }
 
 .mobile-menu-btn span {
     display: block;
-    width: 24px;
+    width: 22px;
     height: 2px;
     background: var(--text-primary);
-    border-radius: var(--radius-full);
-    transition: var(--transition-base);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    position: absolute;
 }
 
+.mobile-menu-btn span:nth-child(1) {
+    top: 14px;
+}
+
+.mobile-menu-btn span:nth-child(2) {
+    top: 21px;
+}
+
+.mobile-menu-btn span:nth-child(3) {
+    top: 28px;
+}
+
+/* Hamburger to X animation */
 .mobile-menu-btn.active span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+    top: 21px;
+    transform: rotate(45deg);
 }
 
 .mobile-menu-btn.active span:nth-child(2) {
@@ -334,7 +354,58 @@ select {
 }
 
 .mobile-menu-btn.active span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+    top: 21px;
+    transform: rotate(-45deg);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg-dark);
+    background-image: var(--gradient-bg);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: var(--space-xl);
+    padding: var(--space-2xl);
+}
+
+.mobile-nav-link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+    color: var(--color-primary);
+}
+
+.mobile-menu-cta {
+    margin-top: var(--space-lg);
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
 }
 
 /* ==========================================
@@ -1396,59 +1467,21 @@ select {
     :root {
         --container-padding: 1rem;
     }
-    
+
+    /* Hide desktop navigation */
     .nav-links,
     .nav-cta {
         display: none;
     }
-    
-    .nav-links.active {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: var(--bg-dark);
-        background-image: var(--gradient-bg);
-        justify-content: center;
-        align-items: center;
-        gap: var(--space-xl);
-        z-index: 2000;
-        padding: var(--space-2xl);
-    }
-    
-    .mobile-menu-header {
-        display: none;
-    }
 
-    .nav-links.active .nav-link {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: var(--text-primary);
-    }
-
-    .mobile-cta {
-        display: block;
-        width: 100%;
-        max-width: 300px;
-        margin-top: var(--space-lg);
-    }
-    
-    .mobile-cta .btn {
-        width: 100%;
-    }
-    
+    /* Show mobile menu button */
     .mobile-menu-btn {
         display: flex;
-        position: fixed;
-        top: var(--space-md);
-        right: var(--container-padding);
-        z-index: 2001;
-        background: var(--bg-glass);
-        border-radius: var(--radius-sm);
-        backdrop-filter: blur(10px);
+    }
+
+    /* Show mobile menu overlay when active */
+    .mobile-menu-overlay {
+        display: block;
     }
 
     .hero {

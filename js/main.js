@@ -107,43 +107,61 @@ function initHeader() {
 }
 
 /**
- * Mobile menu toggle
+ * Mobile menu toggle - Simple and reliable
  */
 function initMobileMenu() {
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenuClose = document.getElementById('mobileMenuClose');
-    const navLinks = document.getElementById('navLinks');
-    
-    if (!mobileMenuBtn || !navLinks) return;
-    
-    const toggleMenu = (show) => {
-        const isActive = show !== undefined ? show : !navLinks.classList.contains('active');
-        mobileMenuBtn.classList.toggle('active', isActive);
-        navLinks.classList.toggle('active', isActive);
-        document.body.style.overflow = isActive ? 'hidden' : '';
-    };
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const menuOverlay = document.getElementById('mobileMenuOverlay');
 
-    mobileMenuBtn.addEventListener('click', () => toggleMenu());
-    
-    if (mobileMenuClose) {
-        mobileMenuClose.addEventListener('click', () => toggleMenu(false));
+    if (!menuBtn || !menuOverlay) return;
+
+    let isOpen = false;
+
+    function openMenu() {
+        isOpen = true;
+        menuBtn.classList.add('active');
+        menuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
     }
-    
-    // Close menu when clicking on a link
-    navLinks.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => toggleMenu(false));
+
+    function closeMenu() {
+        isOpen = false;
+        menuBtn.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    function toggleMenu() {
+        if (isOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    }
+
+    // Toggle on button click
+    menuBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleMenu();
     });
 
-    // Close menu when clicking on the mobile CTA button
-    const mobileCta = navLinks.querySelector('.mobile-cta a');
-    if (mobileCta) {
-        mobileCta.addEventListener('click', () => toggleMenu(false));
-    }
+    // Close when clicking any link in menu
+    menuOverlay.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
 
-    // Close menu when clicking outside (on the overlay background)
-    navLinks.addEventListener('click', (e) => {
-        if (e.target === navLinks) {
-            toggleMenu(false);
+    // Close when clicking overlay background
+    menuOverlay.addEventListener('click', (e) => {
+        if (e.target === menuOverlay) {
+            closeMenu();
+        }
+    });
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && isOpen) {
+            closeMenu();
         }
     });
 }

@@ -102,45 +102,34 @@
     <div class="stars-container" id="stars"></div>
 
     <!-- Navigation -->
-    <header class="header">
+    <header class="header" id="header">
         <nav class="nav container">
             <a href="/" class="logo">
                 <span class="logo-icon">✦</span>
                 <span class="logo-text">Ai-<span class="logo-accent">Agent</span></span>
             </a>
-            <ul class="nav-links" id="navLinks">
-                <li class="mobile-menu-header">
-                    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Menüyü Kapat">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
-                    </button>
-                </li>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-links">
                 <li><a href="/" class="nav-link">Ana Sayfa</a></li>
                 <li><a href="#services" class="nav-link">Hizmetler</a></li>
                 <li><a href="hakkimizda" class="nav-link">Hakkımızda</a></li>
                 <li><a href="sss" class="nav-link">SSS</a></li>
                 <li><a href="#contact" class="nav-link">İletişim</a></li>
-                <li class="mobile-cta">
-                    <a href="#contact" class="btn btn-primary">Ücretsiz Danışmanlık</a>
-                </li>
             </ul>
+
+            <!-- Language Dropdown -->
             <div class="lang-dropdown">
                 <button class="lang-dropdown-btn" id="langDropdownBtn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"></circle>
                         <line x1="2" y1="12" x2="22" y2="12"></line>
-                        <path
-                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-                        </path>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                     </svg>
                     <span>TR</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="dropdown-arrow">
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="dropdown-arrow">
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                 </button>
@@ -159,14 +148,30 @@
                     </a>
                 </div>
             </div>
+
+            <!-- Desktop CTA -->
             <a href="#contact" class="btn btn-primary nav-cta">Ücretsiz Danışmanlık</a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menüyü Aç">
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menüyü Aç/Kapat">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </nav>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <nav class="mobile-menu-content">
+            <a href="/" class="mobile-nav-link">Ana Sayfa</a>
+            <a href="#services" class="mobile-nav-link">Hizmetler</a>
+            <a href="hakkimizda" class="mobile-nav-link">Hakkımızda</a>
+            <a href="sss" class="mobile-nav-link">SSS</a>
+            <a href="#contact" class="mobile-nav-link">İletişim</a>
+            <a href="#contact" class="btn btn-primary btn-lg mobile-menu-cta">Ücretsiz Danışmanlık</a>
+        </nav>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
