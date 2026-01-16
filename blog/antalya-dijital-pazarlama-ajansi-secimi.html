@@ -4,26 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- DNS Prefetch & Preconnect -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- SEO Meta Tags -->
+    <!-- Preload LCP Resources -->
+    <link rel="preload" href="images/hero-poster-mobile.png" as="image" media="(max-width: 768px)">
+    <link rel="preload" href="images/hero-poster.png" as="image" media="(min-width: 769px)">
+
+    <!-- Critical Path CSS -->
+    <style>:root {
+    --color-primary: #6C63FF;
+    --color-secondary: #00D4FF;
+    --bg-dark: #0a0a1a;
+    --bg-darker: #050510;
+    --text-primary: #ffffff;
+    --text-secondary: #b8b8d1;
+    --font-primary: 'Inter', -apple-system, sans-serif;
+    --font-display: 'Space Grotesk', sans-serif;
+    --gradient-bg: radial-gradient(ellipse at top, #1a1a3e 0%, var(--bg-dark) 50%, var(--bg-darker) 100%);
+    --container-max: 1280px;
+    --container-padding: 1.5rem;
+}
+*,*::before,*::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--font-primary); background: var(--bg-dark); background-attachment: fixed; color: var(--text-primary); line-height: 1.6; overflow-x: hidden; }
+.container { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--container-padding); }
+.header { position: fixed; top: 0; left: 0; width: 100%; z-index: 10000; padding: 1rem 0; transition: all 0.3s ease; }
+.nav { display: flex; align-items: center; justify-content: space-between; }
+.logo { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; text-decoration: none; color: var(--text-primary); }
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; padding-top: 80px; background: var(--gradient-bg); }
+.hero-content { position: relative; z-index: 2; max-width: 900px; width: 100%; }
+.hero-title { font-family: var(--font-display); font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 700; line-height: 1.1; margin-bottom: 2rem; opacity: 1; }
+.hero-description { font-size: clamp(1rem, 2vw, 1.25rem); color: var(--text-secondary); max-width: 700px; margin: 0 auto 3rem; opacity: 1; }
+.hero-video { position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; transform: translate(-50%, -50%); object-fit: cover; opacity: 0.8; z-index: 0; background: var(--bg-dark); }</style>
+
+    <!-- Standard Font Loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
     <title>Antalya'da Dijital Pazarlama Ajansı Seçerken Dikkat Edilmesi Gerekenler | AI-Agent</title>
-    <meta name="description"
-        content="Antalya'da dijital pazarlama ajansı seçerken nelere dikkat etmelisiniz? İşletmeniz için doğru ajansı bulmanın 10 altın kuralı. Kepez, Konyaaltı, Muratpaşa ve Lara'da hizmet veren AI-Agent'tan uzman tavsiyeleri.">
-    <meta name="keywords"
-        content="dijital pazarlama ajansı antalya, dijital pazarlama antalya, seo hizmeti antalya, sosyal medya yönetimi antalya, google ads antalya">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Antalya'da Dijital Pazarlama Ajansı Seçim Rehberi">
-    <meta property="og:description"
-        content="İşletmeniz için doğru dijital pazarlama ajansını nasıl seçersiniz? Uzman tavsiyeleri ve dikkat edilmesi gerekenler.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ai-agent.com.tr/blog/antalya-dijital-pazarlama-ajansi-secimi">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://ai-agent.com.tr/blog/antalya-dijital-pazarlama-ajansi-secimi">
-    <link rel="icon" type="image/png" href="../images/logo.png">
-
-    <!-- Schema Markup -->
+<link rel="canonical" href="https://ai-agent.com.tr/blog/antalya-dijital-pazarlama-ajansi-secimi">
+<link rel="icon" type="image/png" href="../images/logo.png">
+<meta property="og:title" content="Antalya'da Dijital Pazarlama Ajansı Seçim Rehberi">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ai-agent.com.tr/blog/antalya-dijital-pazarlama-ajansi-secimi">
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -47,9 +75,7 @@
       "dateModified": "2026-01-13"
     }
     </script>
-
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>

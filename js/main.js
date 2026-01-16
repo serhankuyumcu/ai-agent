@@ -23,7 +23,7 @@ function initStars() {
     const starsContainer = document.getElementById('stars');
     // Reduce stars on mobile for better performance
     const isMobile = window.innerWidth < 768;
-    const numberOfStars = isMobile ? 50 : 100;
+    const numberOfStars = isMobile ? 20 : 100;
     const numberOfShootingStars = isMobile ? 1 : 2;
     
     // Create regular stars
