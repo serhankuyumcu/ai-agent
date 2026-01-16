@@ -1792,6 +1792,9 @@ select {
     opacity: 0.8;
     filter: brightness(0.9) contrast(1.05);
     background: var(--bg-dark);
+    background-image: url('../images/hero-poster.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-video-overlay {

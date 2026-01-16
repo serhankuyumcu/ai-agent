@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initParallax();
     initLanguageDropdown();
     initLazyVideos();
+    initHeroVideo();
 });
 
 /**
@@ -455,6 +456,34 @@ document.addEventListener('DOMContentLoaded', () => {
 /**
  * Lazy load videos when they come into viewport
  */
+/**
+ * Optimize hero video for different devices
+ */
+function initHeroVideo() {
+    const heroVideo = document.querySelector('.hero-video');
+    if (!heroVideo) return;
+
+    // Only load video on desktop (width > 768px)
+    if (window.innerWidth > 768) {
+        const src = heroVideo.dataset.src;
+        if (src) {
+            const source = document.createElement('source');
+            source.src = src;
+            source.type = 'video/mp4';
+            heroVideo.appendChild(source);
+            heroVideo.load();
+        }
+    } else {
+        // On mobile, just rely on the poster attribute or CSS background
+        // We remove it from the DOM or just leave it empty to save bandwidth
+        heroVideo.innerHTML = '';
+        heroVideo.removeAttribute('autoplay');
+    }
+}
+
+/**
+ * Lazy load videos when they come into viewport
+ */
 function initLazyVideos() {
     const lazyVideos = document.querySelectorAll('.lazy-video');
 
@@ -466,6 +495,8 @@ function initLazyVideos() {
                 const video = entry.target;
                 const src = video.dataset.src;
 
+                // On mobile, maybe don't load secondary videos if they are too heavy
+                // But if they have lazy-video class, they are probably meant to be lazy.
                 if (src) {
                     const source = document.createElement('source');
                     source.src = src;
