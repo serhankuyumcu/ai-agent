@@ -7,11 +7,25 @@
     <meta name="description"
         content="Antalya'da yapay zeka destekli dijital dönüşüm ajansı. AI SEO, Google otomasyonları, web tasarım ve mobil uygulama çözümleri ile işletmenizi geleceğe taşıyin. Kepez, Konyaaltı ve Muratpaşa odaklı hizmetler.">
     <title>AI-Agent | Antalya Dijital Dönüşüm ve Yapay Zeka Çözümleri</title>
+
+    <!-- DNS Prefetch & Preconnect for faster resource loading -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+
+    <!-- Fonts with display=swap for faster text rendering -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    </noscript>
+
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="canonical" href="https://ai-agent.com.tr/" />
 
@@ -95,11 +109,23 @@
                 <span class="logo-text">Ai-<span class="logo-accent">Agent</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
+                <li class="mobile-menu-header">
+                    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Menüyü Kapat">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </li>
                 <li><a href="/" class="nav-link">Ana Sayfa</a></li>
                 <li><a href="#services" class="nav-link">Hizmetler</a></li>
                 <li><a href="hakkimizda" class="nav-link">Hakkımızda</a></li>
                 <li><a href="sss" class="nav-link">SSS</a></li>
                 <li><a href="#contact" class="nav-link">İletişim</a></li>
+                <li class="mobile-cta">
+                    <a href="#contact" class="btn btn-primary">Ücretsiz Danışmanlık</a>
+                </li>
             </ul>
             <div class="lang-dropdown">
                 <button class="lang-dropdown-btn" id="langDropdownBtn">
@@ -144,7 +170,7 @@
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <video autoplay muted loop playsinline class="hero-video">
+        <video autoplay muted loop playsinline class="hero-video" preload="metadata">
             <source src="images/hero-background.mp4?v=2" type="video/mp4">
         </video>
         <div class="hero-video-overlay"></div>
@@ -204,8 +230,7 @@
     <!-- Video Showcase Section -->
     <section class="video-showcase">
         <div class="video-showcase-wrapper">
-            <video autoplay muted loop playsinline class="showcase-video">
-                <source src="images/0113.mp4" type="video/mp4">
+            <video muted loop playsinline class="showcase-video lazy-video" preload="none" data-src="images/0113.mp4">
                 Tarayıcınız video etiketini desteklemiyor.
             </video>
         </div>
@@ -453,7 +478,7 @@
                 </p>
             </div>
             <div class="profitability-visual">
-                <img src="images/otel_karlılık.webp" alt="Otel Karlılık Analizi">
+                <img src="images/otel_karlılık.webp" alt="Otel Karlılık Analizi" loading="lazy" decoding="async">
             </div>
         </div>
     </section>
@@ -470,7 +495,7 @@
                 </p>
             </div>
             <div class="profitability-visual">
-                <img src="images/ai_website.webp" alt="AI Website Tasarımı">
+                <img src="images/ai_website.webp" alt="AI Website Tasarımı" loading="lazy" decoding="async">
             </div>
         </div>
     </section>
@@ -794,7 +819,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>
