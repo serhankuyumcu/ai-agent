@@ -1545,9 +1545,12 @@ select {
         z-index: 9999;
     }
 
-    /* Hide desktop lang dropdown */
+    /* Show lang dropdown on mobile and push to right */
     .header .lang-dropdown {
-        display: none;
+        display: flex;
+        margin-left: auto;
+        position: relative;
+        z-index: 10001;
     }
 
     /* Show mobile menu overlay when active */
