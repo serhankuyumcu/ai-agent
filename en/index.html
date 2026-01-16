@@ -95,23 +95,11 @@
                 <span class="logo-text">Ai-<span class="logo-accent">Agent</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
-                <li class="mobile-menu-header">
-                    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close Menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
-                    </button>
-                </li>
                 <li><a href="/en/" class="nav-link">Home</a></li>
                 <li><a href="/en/#services" class="nav-link">Services</a></li>
                 <li><a href="about-us" class="nav-link">About Us</a></li>
                 <li><a href="faq" class="nav-link">FAQ</a></li>
                 <li><a href="/en/#contact" class="nav-link">Contact</a></li>
-                <li class="mobile-cta">
-                    <a href="/en/#contact" class="btn btn-primary">Free Consultancy</a>
-                </li>
             </ul>
             <div class="lang-dropdown">
                 <button class="lang-dropdown-btn" id="langDropdownBtn">
@@ -153,6 +141,32 @@
             </button>
         </nav>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <nav class="mobile-menu-content">
+            <a href="/en/" class="mobile-nav-link">Home</a>
+            <a href="/en/#services" class="mobile-nav-link">Services</a>
+            <a href="about-us" class="mobile-nav-link">About Us</a>
+            <a href="faq" class="mobile-nav-link">FAQ</a>
+            <a href="/en/#contact" class="mobile-nav-link">Contact</a>
+            <a href="/en/#contact" class="btn btn-primary btn-lg mobile-menu-cta">Free Consultation</a>
+            <div class="mobile-menu-lang">
+                <a href="/" class="mobile-lang-item">
+                    <span class="lang-flag">🇹🇷</span>
+                    <span>TR</span>
+                </a>
+                <a href="/en/" class="mobile-lang-item active">
+                    <span class="lang-flag">🇬🇧</span>
+                    <span>EN</span>
+                </a>
+                <a href="/ru/" class="mobile-lang-item">
+                    <span class="lang-flag">🇷🇺</span>
+                    <span>RU</span>
+                </a>
+            </div>
+        </nav>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
